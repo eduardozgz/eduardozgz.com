@@ -23,7 +23,7 @@ const moveIndicator = () => {
 
 const resizeIndicator = () => {
     let activeSelectorRect = getTabSelectorElement(activeTab).getBoundingClientRect();
-    activeTabIndicatorElement.style.width = (activeSelectorRect.width - 20) + 'px';
+    activeTabIndicatorElement.style.width = (activeSelectorRect.width - 22) + 'px';
 }
 
 resizeIndicator();
