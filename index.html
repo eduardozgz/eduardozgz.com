@@ -10,28 +10,34 @@
     <body>
         <header>
             <div class="avatar"></div>
+            <div class="separator"></div>
             <div class="name-wrapper">
                 <div  id="name" class="name">eduardozgz</div>
             </div>
         </header>
         <main>
-            <div class="tab-selector">
-                <div target="tab-social">Social</div>
-                <div target="tab-apps">Apps</div>
-                <div target="tab-projects">Projects</div>
+            <div id="active-tab-indicator" class="active-tab"></div>
+            <div id="tab-selector" class="tab-selector">
+                <div id="selector-social" onclick="switchTab('social')">Social</div>
+                <div id="selector-apps" onclick="switchTab('apps')">Apps</div>
+                <div id="selector-projects" onclick="switchTab('projects')">Projects</div>
             </div>
-            <div class="tabs">
+            <div id="tabs" class="tabs">
                 <div id="tab-social" class="tab">
-
+                        Social tab
                 </div>
                 <div id="tab-apps" class="tab">
-
+                        Apps tab
                 </div>
                 <div id="tab-projects" class="tab">
-                    
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet temporibus nam vitae dolorem quis optio quia, rem inventore fuga perferendis ex nemo? Blanditiis, nobis vero? Eos rem repellendus ad maxime?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dignissimos blanditiis molestias. Nemo est possimus delectus vitae ut, sint nam corporis voluptatum ipsam quaerat. Recusandae temporibus dolores a nam rerum?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam, mollitia repellendus eaque amet adipisci est! Id amet ducimus, consequuntur dicta excepturi neque iste recusandae omnis reprehenderit aliquam totam soluta?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur adipisci officia magnam tempora sint corrupti labore at! Cumque et ipsa obcaecati. Vitae maiores inventore sit optio nulla quo porro!
                 </div>
             </div>
+            <script type="text/javascript" src="textchanger.js"></script>
+            <script type="text/javascript" src="tabs.js"></script>
         </main>
-        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
