@@ -8,6 +8,7 @@ main .tabs .tab {
 }
 
 main .tabs .tab .tab-title {
+    text-align: center;
     display: initial;
     margin: 10px 0 20px;
     text-transform: uppercase;
@@ -15,8 +16,8 @@ main .tabs .tab .tab-title {
 }
 
 main .tabs .nojs-tab-separator {
-    width: 92%;
+    width: auto;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.267);
-    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
 }
