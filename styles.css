@@ -96,20 +96,27 @@ main .tab-selector div {
 
 main .tabs {
     width: 100%;
+    transition: all 600ms;
 }
 
 main .tabs .tab {
     display: none;
     flex-grow: 1;
     padding: 20px;
+    padding-top: 10px;
 }
 
-#tab-social {
-    display: flex;
+main .tabs .tab .tab-title {
+    display: none;
 }
 
-#tab-social {
-    
+main .tabs .tab .buttons-wrapper {
+
+}
+
+
+main .tabs .tab .buttons-wrapper-fullwidth {
+
 }
 
 @media only screen and (max-width: 480px) {

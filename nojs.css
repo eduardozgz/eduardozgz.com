@@ -1,0 +1,22 @@
+main .tab-selector {
+    display: none;
+}
+
+main .tabs .tab {
+    display: flex;
+    flex-direction: column;
+}
+
+main .tabs .tab .tab-title {
+    display: initial;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+main .tabs .nojs-tab-separator {
+    width: 92%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.267);
+    margin: auto;
+}
