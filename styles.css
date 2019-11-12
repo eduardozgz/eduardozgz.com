@@ -33,7 +33,7 @@ header {
 header .avatar {
     width: 210px;
     min-width: 210px;
-    background-image: url("edulogo.png");
+    background-image: url("res/edulogo.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -96,14 +96,12 @@ main .tab-selector div {
 
 main .tabs {
     width: 100%;
-    transition: all 600ms;
 }
 
 main .tabs .tab {
     display: none;
     flex-grow: 1;
-    padding: 20px;
-    padding-top: 10px;
+    padding: 11px;
 }
 
 main .tabs .tab .tab-title {
@@ -111,18 +109,57 @@ main .tabs .tab .tab-title {
 }
 
 main .tabs .tab .buttons-wrapper {
-
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+main .tabs .tab .buttons-wrapper .btn-wrapper{
+    width: 30%;
+    height: 60px;
+    margin-bottom: 22px;
+}
+
+main .tabs .tab .buttons-wrapper .btn-wrapper .btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgba(185, 185, 185, 0.192);
+}
 
 main .tabs .tab .buttons-wrapper-fullwidth {
-
+    display: inline-block;
+    width: 100%;
 }
+
+main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper:last-child {
+    margin-bottom: 0px;
+}
+
+main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper .btn {
+    border-radius: 7px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(185, 185, 185, 0.192);
+}
+
 
 @media only screen and (max-width: 480px) {
     header, main {
         width: 90%;
         margin: 20px auto;
+    }
+
+    main .tabs .tab .buttons-wrapper .btn-wrapper{
+        width: 47%;
+        margin-bottom: 15px;
     }
 }
 
@@ -134,4 +171,58 @@ main .tabs .tab .buttons-wrapper-fullwidth {
     header .separator, header .name-wrapper {
         display: none;
     }
+}
+
+/* Buttons */
+
+.buttons-wrapper .btn-wrapper .btn {
+    
+}
+
+.buttons-wrapper-fullwidth .btn-wrapper .btn {
+    
+}
+
+.btn.discord {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    background-image: url('res/discord.svg');
+    background-color: #7289DA !important;
+}
+
+.btn.twitter {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    background-image: url('res/twitter.svg');
+    background-color: #1DA1F2 !important;
+}
+
+.btn.github {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    background-image: url('res/github.svg');
+    background-color: #171516 !important;
+}
+
+.btn.youtube {
+
+}
+
+.btn.twitch {
+
+}
+
+.btn.steam-bg {
+    background-image: linear-gradient(to bottom right, #111d2e, #1387b8) !important;
+}
+
+.btn.steam-logo {
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('res/steam.svg');
+    background-color: transparent !important;
 }
