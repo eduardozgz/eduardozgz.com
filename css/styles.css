@@ -107,13 +107,7 @@ main .tabs {
 main .tabs .tab {
     display: none;
     flex-grow: 1;
-    padding: 11px;
     padding-top: 0;
-}
-
-main .tabs #tab-social {
-    padding-top: 10px;
-    margin-bottom: -20px;
 }
 
 main .tabs .tab .tab-title {
@@ -122,15 +116,18 @@ main .tabs .tab .tab-title {
 
 main .tabs .tab .buttons-wrapper {
     width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    margin-top: -5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 main .tabs .tab .buttons-wrapper .btn-wrapper {
-    width: 30%;
+    flex: 1 1 146px;
     height: 60px;
-    margin-bottom: 22px;
+    margin: 5px;
 }
 
 main .tabs .tab .buttons-wrapper .btn-wrapper .btn {
@@ -141,20 +138,17 @@ main .tabs .tab .buttons-wrapper .btn-wrapper .btn {
 }
 
 main .tabs .tab .buttons-wrapper-fullwidth {
-    display: inline-block;
     width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
 }
 
 main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper {
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 100%;
+    margin: 5px;
 }
-
-main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper:last-child {
-    margin-bottom: 0px;
-}
-
 main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper .btn {
     overflow: hidden;
     display: flex;
@@ -211,15 +205,6 @@ main .tabs .tab .buttons-wrapper-fullwidth a:visited.btn-wrapper {
     main {
         width: 90%;
         margin: 20px auto;
-    }
-
-    main .tabs .tab .buttons-wrapper .btn-wrapper {
-        width: 47%;
-        margin-bottom: 15px;
-    }
-
-    main .tabs #tab-social {
-        margin-bottom: -15px;
     }
 }
 
@@ -312,7 +297,7 @@ main .tabs .tab .buttons-wrapper-fullwidth a:visited.btn-wrapper {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../res/youtube.svg");
-    background-color: #ff4500 !important;
+    background-color: red !important;
 }
 
 .btn.email {
