@@ -1,7 +1,7 @@
 let activeTab = document.getElementById("tabs").firstElementChild.id.slice(4);
 document.getElementById("tabs").firstElementChild.style.display = "flex";
 let activeTabIndicatorElement = document.getElementById("active-tab-indicator");
-
+let yOfTabSelector = document.getElementById("tab-selector").getBoundingClientRect().y;
 
 getTabElement = (tab) => {
     return document.getElementById("tab-" + tab);
@@ -15,10 +15,12 @@ const moveIndicator = () => {
     let activeSelectorRect = getTabSelectorElement(activeTab).getBoundingClientRect();
 
     let x = activeSelectorRect.x;
-    let y = activeSelectorRect.y;
+    let y = yOfTabSelector;
 
     activeTabIndicatorElement.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    
+
+    window.scrollTo(0, yOfTabSelector);
+
 }
 
 const resizeIndicator = () => {
