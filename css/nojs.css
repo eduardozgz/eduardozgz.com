@@ -7,6 +7,10 @@ main .tabs .tab {
     flex-direction: column;
 }
 
+main .tabs .tab .buttons-wrapper, main .tabs .tab .buttons-wrapper-fullwidth {
+    width: auto;
+}
+
 main .tabs .tab .tab-title {
     text-align: center;
     display: initial;
@@ -15,6 +19,9 @@ main .tabs .tab .tab-title {
     font-weight: 900;
 }
 
+main .tabs .tab .tab-title.extra-top-margin {
+    margin-top: 20px;
+}
 main .tabs .nojs-tab-separator {
     width: auto;
     height: 1px;

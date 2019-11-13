@@ -249,7 +249,7 @@ main .tabs .tab .buttons-wrapper-fullwidth a:visited.btn-wrapper {
     background-position: center;
     background-size: 30px;
     background-image: url("../res/twitch.svg");
-    background-color: #6441a4 !important;
+    background-color: #9146FF !important;
 }
 
 .btn.steam-bg {
@@ -328,6 +328,5 @@ main .tabs .tab .buttons-wrapper-fullwidth .image.deployer {
 
 main .tabs .tab .buttons-wrapper-fullwidth .image.edulogo {
     background-image: url("../res/edulogo.png");
-    background-size: 90px;
     background-color: #1a1a1a;
 }

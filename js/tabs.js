@@ -11,7 +11,7 @@ getTabSelectorElement = (tab) => {
     return document.getElementById("selector-" + tab);
 }
 
-const moveIndicator = () => {
+const moveIndicator = (nojump) => {
     let activeSelectorRect = getTabSelectorElement(activeTab).getBoundingClientRect();
 
     let x = activeSelectorRect.x;
@@ -19,7 +19,7 @@ const moveIndicator = () => {
 
     activeTabIndicatorElement.style.transform = `translateX(${x}px) translateY(${y}px)`;
 
-    window.scrollTo(0, yOfTabSelector);
+    if(!nojump) window.scrollTo(0, yOfTabSelector);
 
 }
 
@@ -36,7 +36,7 @@ document.getElementById("active-tab-indicator").style.display = 'initial';
 window.onresize = () => {
     resizeIndicator();
     activeTabIndicatorElement.style.transition = "none";
-    moveIndicator();
+    moveIndicator(false);
     activeTabIndicatorElement.style.transition = "transform 300ms ease";
 }
 
