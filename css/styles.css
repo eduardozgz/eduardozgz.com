@@ -360,7 +360,10 @@ main .tabs .tab .buttons-wrapper-fullwidth .image.deployer {
     background-color: white;
 }
 
-main .tabs .tab .buttons-wrapper-fullwidth .image.edulogo {
-    background-image: url("../res/edulogo.png");
-    background-color: #1a1a1a;
+main .tabs .tab .buttons-wrapper-fullwidth .image.thissite-image-wrapper {
+    background-image: linear-gradient(to bottom right, rgb(0, 228, 171), rgb(8, 163, 230) );
+}
+
+main .tabs .tab .buttons-wrapper-fullwidth .image.thissite {
+    background-image: url("../res/code.svg");
 }
