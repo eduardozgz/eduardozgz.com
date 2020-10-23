@@ -1,5 +1,5 @@
 /**
- * 
+ * Awful code I had to write in 15 min without pre planning how to do it
  * @param {string} initialText 
  * @param {string} finalText
  * @param {array} targets - Iterator of DOM and its property

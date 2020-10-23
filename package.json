@@ -1,0 +1,41 @@
+{
+  "name": "eduardozgz.com",
+  "version": "1.0.0",
+  "description": "[https://eduardozgz.com](https://eduardozgz.com)",
+  "scripts": {
+    "start": "http-server ./dist",
+    "build": "gulp",
+    "dev": "nodemon --exec \"npm run build && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardozgz/eduardozgz.com.git"
+  },
+  "author": "eduardozgz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduardozgz/eduardozgz.com/issues"
+  },
+  "homepage": "https://github.com/eduardozgz/eduardozgz.com#readme",
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.6",
+    "run-sequence": "^2.2.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "nodemonConfig": {
+    "ignore": ["dist/*"]
+  }
+}
