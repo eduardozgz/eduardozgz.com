@@ -29,7 +29,7 @@ const createTextChanger = (initialText, finalText, targets, speed, startAndEndWa
             if (fadePosition === (finalText.length + fadeLength)) {
                 [finalText, initialText] = [initialText, finalText];
                 initialText;
-                finalText;  
+                finalText;
                 currentText = Array.from(initialText);
                 fadePosition = 0;
                 startAndEndWaitTime_leftSteps = Math.round(startAndEndWaitTime / speed);
@@ -55,5 +55,5 @@ const createTextChanger = (initialText, finalText, targets, speed, startAndEndWa
     }
 }
 
-createTextChanger("eduardozgz   ", "Eduardo Aznar", [ [document, "title"], [ document.getElementById("name"), "innerText" ] ], 120, 10000, 3);
+createTextChanger("eduardozgz", "Eduardo Aznar", [[document, "title"], [document.getElementById("name"), "innerText"]], 120, 10000, 3);
 

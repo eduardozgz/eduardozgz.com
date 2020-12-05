@@ -19,7 +19,7 @@ const moveIndicator = (nojump) => {
 
     activeTabIndicatorElement.style.transform = `translateX(${x}px) translateY(${y}px)`;
 
-    if(!nojump) window.scrollTo(0, yOfTabSelector);
+    if (!nojump) window.scrollTo(0, yOfTabSelector);
 
 }
 

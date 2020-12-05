@@ -36,6 +36,8 @@
     "not op_mini all"
   ],
   "nodemonConfig": {
-    "ignore": ["dist/*"]
+    "ignore": [
+      "dist/*"
+    ]
   }
 }
