@@ -355,6 +355,19 @@ main .tabs .tab .buttons-wrapper-fullwidth .image .mc-image {
     background-image: url("../res/mc.svg");
 }
 
+main .tabs .tab .buttons-wrapper-fullwidth .minecraft {
+    background-image: url("../res/minecraft.svg");
+    background-color: green;
+    background-size: 85px !important;
+}
+
+main .tabs .tab .buttons-wrapper-fullwidth .fms {
+    background-image: url("../res/fms.svg");
+    background-color: #5d00a7;
+    background-size: 85px !important;
+}
+
+
 main .tabs .tab .buttons-wrapper-fullwidth .image.deployer {
     background-image: url("../res/deployer.svg");
     background-color: white;

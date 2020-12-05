@@ -5,7 +5,7 @@
   "scripts": {
     "start": "http-server ./dist",
     "build": "gulp",
-    "dev": "nodemon --exec \"npm run build && npm run start\""
+    "dev": "nodemon --watch src --exec \"npm run build && npm run start\""
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   "nodemonConfig": {
     "ignore": [
       "dist/*"
-    ]
+    ],
+    "ext": "*"
   }
 }

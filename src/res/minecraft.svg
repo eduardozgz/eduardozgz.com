@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128px"
+   height="128px"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="minecraft.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="609.73756"
+     inkscape:cy="329.31293"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1458"
+     inkscape:window-height="1016"
+     inkscape:window-x="240"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <a
+       id="a881"
+       transform="translate(0.58483152,7.1347699)" />
+    <path
+       id="rect879"
+       style="fill:#000000;stroke-width:0.264583"
+       d="M 12.69761,29.0012 H 29.630942 V 45.934532 H 12.69761 Z m 0,-16.933325 H 29.630942 V 29.001207 H 12.69761 Z M 29.630941,29.0012 H 46.564274 V 45.934532 H 29.630941 Z m 0,-16.933325 H 46.564274 V 29.001207 H 29.630941 Z m 67.73334,16.933332 H 114.29761 V 45.93454 H 97.364281 Z m 0,-16.933324 H 114.29761 V 29.001215 H 97.364281 Z M 80.430946,29.001207 H 97.364279 V 45.93454 H 80.430946 Z m 0,-16.933324 H 97.364279 V 29.001215 H 80.430946 Z m 0,67.733318 H 97.364279 V 96.734533 H 80.430946 Z m 0,-16.933323 H 97.364279 V 79.80121 H 80.430946 Z m 0,33.866657 H 97.364279 V 113.66787 H 80.430946 Z M 63.497613,62.867871 H 80.430945 V 79.801203 H 63.497613 Z m -1e-6,-16.933327 H 80.430944 V 62.867876 H 63.497612 Z m 0,33.866657 H 80.430944 V 96.734533 H 63.497612 Z M 46.564278,62.867863 H 63.49761 V 79.801195 H 46.564278 Z m 0,-16.933327 H 63.49761 V 62.867868 H 46.564278 Z m 0,33.866657 H 63.49761 V 96.734526 H 46.564278 Z m -16.933335,-7e-6 H 46.564276 V 96.734518 H 29.630943 Z m 0,-16.933323 H 46.564276 V 79.801195 H 29.630943 Z m 0,33.866657 h 16.933333 v 16.93333 H 29.630943 Z" />
+  </g>
+</svg>
