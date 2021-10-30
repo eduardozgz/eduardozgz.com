@@ -38,10 +38,19 @@ header .logo.bg .logo {
     background-position: center;
 }
 
+#logo-bg {
+    opacity: 0;
+
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
 header .logo.bg{
     width: 210px;
     min-width: 210px;
-    
+
     background: linear-gradient(127deg, rgb(8, 163, 230), rgb(0, 228, 171), rgb(8, 163, 230), rgb(0, 228, 171), rgb(8, 163, 230), rgb(0, 228, 171));
     background-size: 500% 500%;
     -webkit-animation: logo 25s cubic-bezier(.65,.05,.36,1) infinite;
