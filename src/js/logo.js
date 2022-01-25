@@ -5,5 +5,5 @@
     document.getElementById("logo-bg").style.opacity = 1;
   };
 
-  logo.src = "/res/edulogo.svg";
+  logo.src = "./res/edulogo.svg";
 })();

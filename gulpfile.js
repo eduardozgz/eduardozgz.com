@@ -18,14 +18,12 @@ gulp.task('styles', () => {
     return gulp.src('./src/**/*.css')
         .pipe(autoprefixer())
         .pipe(csso())
-        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('scripts', () => {
     return gulp.src('./src/**/*.js')
         .pipe(uglify())
-        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist'))
 });
 

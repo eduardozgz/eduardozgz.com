@@ -102,20 +102,43 @@ main {
     overflow: hidden;
 }
 
-main .active-tab {
-    display: none;
+.active-tab {
     position: absolute;
     top: 0;
     left: 0;
     height: 29px;
     margin: 10px;
-    border-radius: 7px;
-    background-color: rgba(185, 185, 185, 0.192);
+	border-radius: 7px;
+    background-color: rgb(77, 77, 77);
     transition: transform 300ms ease;
 }
 
-main .tab-selector {
+.tab-selector-wrapper {
+    position: relative;
+    height: 50px;
+}
+
+.tab-selector-back {
     z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#hover-tab-indicator.active-tab.visible {
+    animation: inhover 150ms;
+}
+
+@keyframes inhover {
+	from {transform: scale(0.8, 0.8)}
+}
+
+.tab-selector {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     color: rgb(255, 255, 255);

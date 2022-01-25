@@ -17,14 +17,14 @@
     <meta name="twitter:site" content="@0xEduardozgz">
     <meta name="theme-color" content="#1a1a1a" />
     <title>eduardozgz</title>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <noscript>
-        <link rel="stylesheet" href="css/nojs.min.css">
+        <link rel="stylesheet" href="css/nojs.css">
     </noscript>
 </head>
 
 <body>
-    <header>
+    <header aria-hidden="true">
         <div id="logo-bg" class="logo bg">
             <div class="logo"></div>
         </div>
@@ -34,14 +34,19 @@
         </div>
     </header>
     <main>
-        <div id="active-tab-indicator" class="active-tab"></div>
-        <div id="tab-selector" class="tab-selector">
-            <div id="selector-social" role="button" onclick="switchTab('social')">Social</div>
-            <div id="selector-sites" role="button" onclick="switchTab('sites')">Sites</div>
-            <div id="selector-projects" role="button" onclick="switchTab('projects')">Projects</div>
+        <div class="tab-selector-wrapper">
+            <div class="tab-selector-back">
+                <div id="active-tab-indicator" class="active-tab"></div>
+                <div id="hover-tab-indicator" class="active-tab"></div>
+            </div>
+            <div id="tab-selector" class="tab-selector" role="navigation">
+                <div tab="social" role="button" tabindex="0">Social</div>
+                <div tab="sites" role="button" tabindex="0">Sites</div>
+                <div tab="projects" role="button" tabindex="0">Projects</div>
+            </div>
         </div>
         <div id="tabs" class="tabs">
-            <div id="tab-social" class="tab">
+            <div id="social" tab="social" class="tab">
                 <div class="tab-title extra-top-margin">Social</div>
                 <div class="buttons-wrapper">
                     <a href="https://discord.gg/g4MfV6N" aria-label="My Discord Server" class="btn-wrapper">
@@ -79,7 +84,7 @@
                 </div>
             </div>
             <div class="nojs-tab-separator"></div>
-            <div id="tab-sites" class="tab">
+            <div id="sites" tab="sites" class="tab">
                 <div class="tab-title">Sites</div>
                 <div class="buttons-wrapper-fullwidth">
                     <a href="https://member-counter.eduardozgz.com/" class="btn-wrapper">
@@ -130,7 +135,7 @@
                 </div>
             </div>
             <div class="nojs-tab-separator"></div>
-            <div id="tab-projects" class="tab">
+            <div id="projects" tab="projects" class="tab">
                 <div class="tab-title">Projects</div>
                 <div class="buttons-wrapper-fullwidth">
                     <a href="https://github.com/eduardozgz/member-counter-bot" class="btn-wrapper">
@@ -180,10 +185,9 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/logo.min.js"></script>
-        <script type="text/javascript" src="js/tabs.min.js"></script>
-        <script type="text/javascript" src="js/textchanger.min.js"></script>
     </main>
+    <script type="text/javascript" src="js/logo.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/textchanger.js"></script>
 </body>
-
 </html>
