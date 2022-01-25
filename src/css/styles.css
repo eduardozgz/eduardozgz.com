@@ -90,7 +90,6 @@ header .name-wrapper {
 }
 
 header .name-wrapper .name {
-    user-select: none;
     width: 100%;
     font-size: 180%;
     text-align: center;
@@ -138,28 +137,22 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     color: rgb(255, 255, 255);
-    user-select: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-main .tab-selector div {
+main .tab-selector * {
     z-index: 2;
     text-align: center;
     width: 100%;
     padding: 15px 0;
     text-transform: uppercase;
     line-height: 20px;
+    outline: 0;
 }
 
 main .tabs {
@@ -192,6 +185,10 @@ main .tabs .tab .buttons-wrapper .btn-wrapper {
     margin: 5px;
 }
 
+main .tabs .tab .buttons-wrapper .btn-wrapper:focus, main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper:focus {
+    outline: 1px rgb(175, 175, 175) solid;
+}  
+
 main .tabs .tab .buttons-wrapper .btn-wrapper .btn {
     width: 100%;
     height: 100%;
@@ -211,6 +208,7 @@ main .tabs .tab .buttons-wrapper-fullwidth {
 main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper {
     margin: 5px;
 }
+
 main .tabs .tab .buttons-wrapper-fullwidth .btn-wrapper .btn {
     overflow: hidden;
     display: flex;

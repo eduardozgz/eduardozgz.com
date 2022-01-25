@@ -35,14 +35,14 @@
     </header>
     <main>
         <div class="tab-selector-wrapper">
-            <div class="tab-selector-back">
+            <div class="tab-selector-back" aria-hidden="true">
                 <div id="active-tab-indicator" class="active-tab"></div>
                 <div id="hover-tab-indicator" class="active-tab"></div>
             </div>
             <div id="tab-selector" class="tab-selector" role="navigation">
-                <div tab="social" role="button" tabindex="0">Social</div>
-                <div tab="sites" role="button" tabindex="0">Sites</div>
-                <div tab="projects" role="button" tabindex="0">Projects</div>
+                <div tab="social" role="button" tabindex="0" aria-expanded="false">Social</div>
+                <div tab="sites" role="button" tabindex="0" aria-expanded="false">Sites</div>
+                <div tab="projects" role="button" tabindex="0" aria-expanded="false">Projects</div>
             </div>
         </div>
         <div id="tabs" class="tabs">

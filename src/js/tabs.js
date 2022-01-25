@@ -62,10 +62,14 @@ function hideHoverTabIndicator() {
 function switchTab(tabName) {
     // Display tab
     getTabElement(currentTab).style.display = "none";
-    currentTab = tabName;
-    getTabElement(tabName).style.display = "flex";
+    getTabButtonElement(currentTab).setAttribute("aria-expanded", "false");
 
-    moveActiveTabIndicator(tabName);
+    currentTab = tabName;
+
+    getTabElement(currentTab).style.display = "flex";
+    getTabButtonElement(currentTab).setAttribute("aria-expanded", "true");
+
+    moveActiveTabIndicator(currentTab)
 }
 
 if (window.location.hash) {
@@ -76,11 +80,28 @@ switchTab(currentTab)
 
 for (const buttonEl of tabSelectorEl.children) {
     const attTabName = buttonEl.attributes.getNamedItem('tab').value;
+
     buttonEl.addEventListener('click', () => {
         window.location.hash = attTabName;
         switchTab(attTabName);
     })
-    buttonEl.addEventListener('onfocus', () => showHoverTabIndicator(attTabName))
+
+    // https://dev.to/tylerjdev/when-role-button-is-not-enough-dac
+    buttonEl.addEventListener('keydown', function(e) {
+        const keyD = e.key !== undefined ? e.key : e.keyCode;
+        // e.key && e.keycode have mixed support - keycode is deprecated but support is greater than e.key
+        // I tested within IE11, Firefox, Chrome, Edge (latest) & all had good support for e.key
+      
+          if ( (keyD === 'Enter' || keyD === 13) || (['Spacebar', ' '].indexOf(keyD) >= 0 || keyD === 32)) {
+          // In IE11 and lower, e.key will equal "Spacebar" instead of ' '
+      
+          // Default behavior is prevented to prevent the page to scroll when "space" is pressed
+          e.preventDefault();
+          this.click();
+        }
+    });
+
+    buttonEl.addEventListener('focus', () => showHoverTabIndicator(attTabName))
     buttonEl.addEventListener('mouseover', () => showHoverTabIndicator(attTabName))
     buttonEl.addEventListener('mouseout', () => hideHoverTabIndicator())
 }
