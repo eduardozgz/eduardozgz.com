@@ -20,12 +20,12 @@ main {
     margin: 20px auto;
 }
 
-header {
+.logos {
     height: 150px;
     display: flex;
 }
 
-header .logo.bg .logo {
+.logos .logo.bg .logo {
     width: 100%;
     height: 100%;
     background-image: url("../res/edulogo.svg");
@@ -43,7 +43,7 @@ header .logo.bg .logo {
     transition: opacity 300ms linear;
 }
 
-header .logo.bg{
+.logos .logo.bg{
     width: 210px;
     min-width: 210px;
 
@@ -75,7 +75,7 @@ header .logo.bg{
         100%{background-position:0% 20%}
     }
 
-header .separator {
+.logos .separator {
     height: 80px;
     width: 1px;
     min-width: 1px;
@@ -83,16 +83,22 @@ header .separator {
     background-color: rgb(114, 114, 114);
 }
 
-header .name-wrapper {
+.logos .name-wrapper {
     display: flex;
     align-items: center;
     flex-grow: 1;
 }
 
-header .name-wrapper .name {
+.logos .name-wrapper .name {
     width: 100%;
     font-size: 180%;
     text-align: center;
+}
+
+header h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 main {
@@ -273,8 +279,8 @@ main .tabs .tab .buttons-wrapper-fullwidth a:visited.btn-wrapper {
         width: 100%;
     }
 
-    header .separator,
-    header .name-wrapper {
+    .logos .separator,
+    .logos .name-wrapper {
         display: none;
     }
 }
