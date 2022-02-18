@@ -3,7 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ master ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -39,4 +38,4 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            ghcr.io/${{ github.repository }}:beta
+            ghcr.io/${{ github.repository }}:latest
